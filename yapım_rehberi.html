@@ -1,0 +1,502 @@
+<!--# Düzenlenmiş `yapım_rehberi.html`
+
+```html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapım Rehberi</title>
+    <link rel="stylesheet" href="deneme.css">
+    <link rel="icon" href="indir (1).jfif"  type="image/jfif">
+</head>
+<body>
+
+    <h2>Yapım Rehberi</h2>
+
+    <p class="page-description">
+        Bu sayfada farklı kahve çeşitlerinin yapım rehberlerini bulabilirsiniz.
+    </p>
+
+    <!-- Menü -->
+    <header>
+        <nav>
+            <ul class="menu">
+
+                <!-- Espresso Bazlı -->
+                <li>
+                    <a href="#">Espresso Bazlı ▼</a>
+
+                    <ul class="dropdown">
+                        <li><a href="espresso.html">Espresso</a></li>
+                        <li><a href="ristretto.html">Ristretto</a></li>
+                        <li><a href="americano.html">Americano</a></li>
+                        <li><a href="macchiato.html">Macchiato</a></li>
+                        <li><a href="cappuccino.html">Cappuccino</a></li>
+                        <li><a href="mocha.html">Mocha</a></li>
+                        <li><a href="caffe_latte.html">Caffè Latte</a></li>
+                        <li><a href="lungo.html">Lungo</a></li>
+                        <li><a href="flat_white.html">Flat White</a></li>
+                        <li><a href="cartoda.html">Cortado</a></li>
+                    </ul>
+                </li>
+
+                <!-- Filtre Kahveler -->
+                <li>
+                    <a href="#">Filtre Yöntemleri ▼</a>
+
+                    <ul class="dropdown">
+                        <li><a href="turk_kahvesi.html">Türk Kahvesi</a></li>
+                        <li><a href="v_60.html">V60</a></li>
+                        <li><a href="chemex.html">Chemex</a></li>
+                        <li><a href="#">French Press</a></li>
+                        <li><a href="#">Aeropress</a></li>
+                        <li><a href="#">Moka Pot</a></li>
+                    </ul>
+                </li>
+
+                <!-- Soğuk Kahveler -->
+                <li>
+                    <a href="#">Soğuk Kahveler ▼</a>
+
+                    <ul class="dropdown">
+                        <li><a href="#">Cold Brew</a></li>
+                        <li><a href="#">Iced Latte</a></li>
+                        <li><a href="#">Iced Americano</a></li>
+                        <li><a href="#">Frappé</a></li>
+                    </ul>
+                </li>
+
+                <!-- Aromalı -->
+                <li>
+                    <a href="#">Aromalı Kahveler ▼</a>
+
+                    <ul class="dropdown">
+                        <li><a href="#">Vanilla Latte</a></li>
+                        <li><a href="#">Caramel Latte</a></li>
+                        <li><a href="#">Caramel Macchiato</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Açıklama -->
+    <section class="coffee-info">
+
+        <h2>Kendi Kahveni Oluştur ☕</h2>
+
+        <p>
+            Kendi damak zevkine uygun kahveyi oluşturabilir,
+            farklı süt türleri ve aromalarla kahveni kişiselleştirebilirsin.
+        </p>
+
+    </section>
+
+
+    <!-- Form Alanı -->
+    <section class="coffee-form-container">
+
+        <form>
+
+            <!-- Kahve Türü -->
+            <div class="form-group">
+
+                <label for="kahveTuru">
+                    Kahve Türü
+                </label>
+
+                <select id="kahveTuru" name="kahveTuru">
+
+                    <option value="Türk Kahvesi">
+                        Türk Kahvesi
+                    </option>
+
+                    <option value="Latte">
+                        Latte
+                    </option>
+
+                    <option value="Espresso">
+                        Espresso
+                    </option>
+
+                    <option value="Mocha">
+                        Mocha
+                    </option>
+
+                    <option value="Cappuccino">
+                        Cappuccino
+                    </option>
+
+                    <option value="Americano">
+                        Americano
+                    </option>
+
+                    <option value="Cold Brew">
+                        Cold Brew
+                    </option>
+                    
+                    <option value="Ristretto">
+                        Ristretto
+                    </option>
+
+                    <option value="Lungo">
+                        Lungo
+                    </option>
+
+                    <option value="Flat White">
+                        Flat White
+                    </option>
+
+                    <option value="Cartado">
+                        Cartado
+                    </option>
+
+                    <option value="V60">
+                        V60
+                    </option>
+
+                    <option value="Chemex">
+                        Chemex
+                    </option>
+
+                    <option value="French Press">
+                        French Press
+                    </option>
+
+                    <option value="Aeropress">
+                        Aeropress
+                    </option>
+
+                    <option value="Moka Pot">
+                        Moka Pot
+                    </option>
+
+                    <option value="Iced Latte">
+                        Iced Latte
+                    </option>
+
+                    <option value="Iced Americano">
+                        Iced Americano
+                    </option>
+
+                    <option value="Frappe">
+                        Frappe
+                    </option>
+
+                    <option value="Vanilla Latte">
+                        Vanilla Latte
+                    </option>
+
+                    <option value="Caramel Latte">
+                        Caramel Latte
+                    </option>
+
+                    <option value="Caramel Macchiato">
+                        Caramel Macchiato
+                    </option>
+
+                    <option value="Long Black">
+                        Long Black
+                    </option>
+
+                    <option value="Japanese Cold Brew">
+                        Japanese Cold Brew
+                    </option>
+
+                    <option value="Syphon">
+                        Syphon
+                    </option>
+
+                    <option value="Drip Coffee">
+                        Drip Coffee
+                    </option>
+
+                    <option value="Iced Mocha">
+                        Iced Mocha
+                    </option>
+
+                    <option value="Cold Drip">
+                        Cold Drip
+                    </option>
+
+                    <option value="Nitro Cold Brew">
+                        Nitro Cold Brew
+                    </option>
+
+                    <option value="Espresso Tonic">
+                        Espresso Tonic
+                    </option>
+
+                    <option value="Mazagran">
+                        Mazagran
+                    </option>
+
+                    <option value="Yemen Mocha">
+                        Yemen Mocha
+                    </option>
+
+                    <option value="Vietnamese Coffee">
+                        Vietnamese Coffee
+                    </option>
+
+                    <option value="Cuban Coffee (Cafecito)">
+                        Cuban Coffee (Cafecito)
+                    </option>
+
+                    <option value="Cafe au Lait">
+                        Cafe au Lait
+                    </option>
+
+                    <option value="Cafe Con Leche">
+                        Cafe Con Leche
+                    </option>
+
+                    <option value="Buna (Etiyopya)">
+                        Buna (Etiyopya)
+                    </option>
+
+                    <option value="Vanilla Latte">
+                        Vanilla Latte
+                    </option>
+
+                    <option value="Caramel Latte">
+                        Caramel Latte
+                    </option>
+
+                    <option value="Caramel Macchiato">
+                        Caramel Macchiato
+                    </option>
+
+                    <option value="Yulaf sütlü latte">
+                        Yulaf sütlü latte
+                    </option>
+
+                    <option value="Lotus latte">
+                        Lotus latte
+                    </option>
+
+                    <option value="Iced salted caramel latte">
+                        Iced salted caramel latte
+                    </option>
+
+                    <option value="Sütlü Filtre">
+                        Sütlü Filtre
+                    </option>
+
+                    <option value="Dibek Kahvesi">
+                        Dibek Kahvesi
+                    </option>
+
+                    <option value="Menengiç">
+                          Menengiç
+                    </option>
+                </select>
+            </div>
+
+
+            <!-- Yapım Türü -->
+            <div class="radio-group">
+
+                <p>Yapım Türü</p>
+
+                <input type="radio"
+                       name="yapimTuru"
+                       id="sicak"
+                       value="Sıcak">
+
+                <label for="sicak">
+                    Sıcak
+                </label>
+
+                <input type="radio"
+                       name="yapimTuru"
+                       id="soguk"
+                       value="Soğuk">
+
+                <label for="soguk">
+                    Soğuk
+                </label>
+
+            </div>
+
+
+            <!-- Süt -->
+            <div class="radio-group">
+
+                <p>Süt ister misiniz?</p>
+
+                <input type="radio"
+                       name="sut"
+                       id="sutEvet"
+                       value="Evet">
+
+                <label for="sutEvet">
+                    Evet
+                </label>
+
+                <input type="radio"
+                       name="sut"
+                       id="sutHayir"
+                       value="Hayır">
+
+                <label for="sutHayir">
+                    Hayır
+                </label>
+
+            </div>
+
+
+            <!-- Süt Türü -->
+            <div class="form-group">
+
+                <label for="sutTuru">
+                    Süt Türü
+                </label>
+
+                <select id="sutTuru" name="sutTuru">
+
+                    <option value="Tam Yağlı">
+                        Tam Yağlı
+                    </option>
+
+                    <option value="Az Yağlı">
+                        Az Yağlı
+                    </option>
+
+                    <option value="Badem Sütü">
+                        Badem Sütü
+                    </option>
+
+                    <option value="Yulaf Sütü">
+                        Yulaf Sütü
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Şurup -->
+            <div class="radio-group">
+
+                <p>Şurup ister misiniz?</p>
+
+                <input type="radio"
+                       name="surup"
+                       id="surupEvet"
+                       value="Evet">
+
+                <label for="surupEvet">
+                    Evet
+                </label>
+
+                <input type="radio"
+                       name="surup"
+                       id="surupHayir"
+                       value="Hayır">
+
+                <label for="surupHayir">
+                    Hayır
+                </label>
+
+            </div>
+
+
+            <!-- Şurup Türü -->
+            <div class="form-group">
+
+                <label for="surupTuru">
+                    Şurup Türü
+                </label>
+
+                <select id="surupTuru" name="surupTuru">
+
+                    <option value="Vanilla">
+                        Vanilla
+                    </option>
+
+                    <option value="Caramel">
+                        Caramel
+                    </option>
+
+                    <option value="Hazelnut">
+                        Hazelnut
+                    </option>
+
+                    <option value="Mocha">
+                        Mocha
+                    </option>
+                    <option value="Çikolata">
+                        Çikolata
+                    </option>
+                    <option value="Çilek">
+                        Çilek
+                    </option>
+                </select>
+
+            </div>
+
+
+            <!-- Not -->
+            <div class="form-group">
+
+                <label for="notunuz">
+                    Eklemek İstedikleriniz
+                </label>
+
+                <textarea id="notunuz"
+                          name="notunuz"
+                          rows="5">
+
+                </textarea>
+
+            </div>
+
+
+            <!-- Buton -->
+            <button type="submit">
+                Tarifimi Oluştur ☕
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Sonuç Alanı -->
+    <section class="coffee-result">
+
+        <h2>Seçilen Özellikler</h2>
+
+        <p>☕ Kahve Türü : -</p>
+
+        <p>🥛 Süt Türü : -</p>
+
+        <p>🍯 Şurup Türü : -</p>
+
+    </section>
+
+</body>
+</html>
+<!--```
+
+# Sana önemli notlar ☕
+
+* `id` isimlerini profesyonel hale getirdim.
+* Aynı `id` kullanım hatalarını düzelttim.
+* Kod bloklarını kategorilere ayırdım.
+* Okunabilirliği ciddi şekilde artırdım.
+* İleride JavaScript eklemen için uygun hale getirdim.
+* Görsel olarak daha profesyonel bir yapı oluştu.
+
+Bir sonraki aşamada buna:
+
+* JavaScript ile canlı sonuç gösterme
+* Kahve önerme sistemi
+* Kullanıcı seçimine göre dinamik içerik
+
+çok rahat eklenebilir.
+-->
