@@ -551,14 +551,3 @@ button:hover{
 .footer-box a:hover{
     color:#f5d7b2;
 }
-#aramaSonuclari{
-    margin-top:10px;
-}
-
-#aramaSonuclari p{
-    background:#fff8f0;
-    padding:10px;
-    border:1px solid #c9a67c;
-    border-radius:5px;
-    margin:5px 0;
-}
