@@ -168,7 +168,7 @@
                     </option>
 
                     <option value="Moka Pot">
-                        Moka Pot
+                        Moka Pot 
                     </option>
 
                     <option value="Iced Latte">
@@ -498,104 +498,4 @@ Bir sonraki aşamada buna:
 * Kullanıcı seçimine göre dinamik içerik
 
 çok rahat eklenebilir.
-
-
-
-<script>
-
-let kahveler = [
-    "Espresso",
-    "Americano",
-    "Latte",
-    "Cappuccino",
-    "Mocha",
-    "Macchiato",
-    "Flat White",
-    "Türk Kahvesi",
-    "Caffè Mocha",
-    "Ristretto",
-    "Lungo",
-    "Long Black",
-    "Cortado",
-    "Cold Brew",
-    "Japanese Cold Brew",
-    "Iced Americano",
-    "Iced Latte",
-    "V60 (Pour Over)",
-    "Chemex",
-    "French Press",
-    "Aeropress",
-    "Moka Pot",
-    "Syphon",
-    "Drip Coffee",
-    "Iced Mocha",
-    "Frappé",
-    "Cold Drip",
-    "Nitro Cold Brew",
-    "Espresso Tonic",
-    "Mazagran",
-    "Yemen Mocha",
-    "Vietnamese Coffee",
-    "Cuban Coffee (Cafecito)",
-    "Café au Lait",
-    "Café con Leche",
-    "Buna (Etiyopya)",
-    "Vanilla Latte",
-    "Caramel Latte",
-    "Caramel Macchiato",
-    "Yulaf sütlü latte",
-    "Lotus latte",
-    "Iced salted caramel latte",
-    "Sütlü Filtre",
-    "Dibek Kahvesi",
-    "Menengiç",
-    "Matcha"
-];
-
-/* Günün Kahvesi */
-
-let rastgeleSayi =
-Math.floor(Math.random() * kahveler.length);
-
-document.getElementById("gununKahvesi").innerHTML =
-kahveler[rastgeleSayi];
-
-
-/* Arama Sistemi */
-
-let aramaKutusu =
-document.getElementById("aramaKutusu");
-
-let sonucAlani =
-document.getElementById("aramaSonuclari");
-
-aramaKutusu.addEventListener("keyup", function(){
-
-    let aranacakKelime =
-    aramaKutusu.value.toLowerCase();
-
-    sonucAlani.innerHTML = "";
-
-    if(aranacakKelime === ""){
-        return;
-    }
-
-    kahveler.forEach(function(kahve){
-
-        if(kahve.toLowerCase().includes(aranacakKelime)){
-
-            sonucAlani.innerHTML +=
-            `
-            <div class="arama-item">
-                ☕ ${kahve}
-            </div>
-            `;
-        }
-
-    });
-
-});
-
-</script>
-
 -->
