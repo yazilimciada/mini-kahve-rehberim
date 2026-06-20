@@ -129,22 +129,18 @@
 
     </section>
 
-    <!-- GÜNÜN KAHVESİ -->
-    <section class="gunun-kahvesi">
+   <!-- GÜNÜN KAHVESİ -->
 
-        <h2>☕ Günün Kahvesi</h2>
+<section class="gunun-kahvesi">
 
-        <p>
-            Bugünün önerisi:
-            <strong>Caramel Macchiato</strong>
-        </p>
+    <h2>☕ Günün Kahvesi</h2>
 
-        <p>
-            Tatlı aroması ve yoğun espresso dengesiyle
-            kahve severlerin favorilerinden biri.
-        </p>
+    <p>
+        Bugünün önerisi:
+        <strong id="gununKahvesi"></strong>
+    </p>
 
-    </section>
+</section>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -180,8 +176,12 @@
 
                 <h3>İletişim</h3>
 
-                <p>📞 0534 933 58 45</p>
-                <p>📧 adagoncu931@gmail.com</p>
+                <p>
+                    <a href="tel:05349335845">0-534-933-58-45</a>
+                </p>
+                <p>
+                    <a href="mailto:adagoncu931@gmail.com">📧 adagoncu931@gmail.com</a>
+                </p>
             </div>
 
         </div>
@@ -194,6 +194,66 @@
         </div>
 
     </footer>
+
+    <script>
+
+let kahveler = [
+    "Espresso",
+    "Americano",
+    "Latte",
+    "Cappuccino",
+    "Mocha",
+    "Macchiato",
+    "Flat White",
+    "Ristretto",
+    "Türk Kahvesi"
+    "Caffè Mocha"
+    "Ristretto"
+    "Lungo"
+    "Long Black"
+    "Cortado"
+    "Cold Brew"
+    "Japanese Cold Brew"
+    "Iced Americano"
+    "Iced Latte"
+    "V60 (Pour Over)"
+    "Chemex"
+    "French Press"
+    "Aeropress"
+    "Moka Pot"
+    "Syphon"
+    "Drip Coffee"
+    "Iced Mocha"
+    "Frappé"
+    "Cold Drip"
+    "Nitro Cold Brew"
+    "Espresso Tonic"
+    "Mazagran"
+    "Yemen Mocha"
+    "Vietnamese Coffee"
+    "Cuban Coffee (Cafecito)"
+    "Café au Lait"
+    "Café con Leche"
+    "Buna (Etiyopya)"
+    "Vanilla Latte"
+    "Caramel Latte"
+    "Caramel Macchiato"
+    "Yulaf sütlü latte"
+    "Lotus latte"
+    "Iced salted caramel latte"
+    "Sütlü Filtre"
+    "Dibek Kahvesi"
+    "Menengiç"
+    "Matcha"
+];
+
+let rastgeleSayi =
+Math.floor(Math.random() * kahveler.length);
+
+document.getElementById("gununKahvesi").innerHTML =
+kahveler[rastgeleSayi];
+
+</script>
 
 </body>
 </html>

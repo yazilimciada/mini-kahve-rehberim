@@ -543,3 +543,11 @@ button:hover{
     background:#a67c52;
     transform:scale(1.05);
 }
+.footer-box a{
+    color:#f1f1f1;
+    text-decoration:none;
+}
+
+.footer-box a:hover{
+    color:#f5d7b2;
+}
