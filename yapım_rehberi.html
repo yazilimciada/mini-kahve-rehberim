@@ -93,9 +93,11 @@
             Kendi damak zevkine uygun kahveyi oluşturabilir,
             farklı süt türleri ve aromalarla kahveni kişiselleştirebilirsin.
         </p>
-
     </section>
+    <!-- Form Alanı -->
+    <section class="coffee-form-container">
 
+        <form>
 <div class="form-group">
 
     <label for="aramaKutusu">
@@ -108,13 +110,6 @@
         placeholder="Kahve ismi yazın...">
 
 </div>
-
-<div id="aramaSonuclari"></div>
-    <!-- Form Alanı -->
-    <section class="coffee-form-container">
-
-        <form>
-
             <!-- Kahve Türü -->
             <div class="form-group">
 
@@ -495,6 +490,29 @@
         <p>🍯 Şurup Türü : -</p>
 
     </section>
+</body>
+</html>
+<!--```
+
+# Sana önemli notlar ☕
+
+* `id` isimlerini profesyonel hale getirdim.
+* Aynı `id` kullanım hatalarını düzelttim.
+* Kod bloklarını kategorilere ayırdım.
+* Okunabilirliği ciddi şekilde artırdım.
+* İleride JavaScript eklemen için uygun hale getirdim.
+* Görsel olarak daha profesyonel bir yapı oluştu.
+
+Bir sonraki aşamada buna:
+
+* JavaScript ile canlı sonuç gösterme
+* Kahve önerme sistemi
+* Kullanıcı seçimine göre dinamik içerik
+
+çok rahat eklenebilir.
+
+
+
 <script>
 
 let kahveler = [
@@ -543,9 +561,19 @@ let kahveler = [
     "Sütlü Filtre",
     "Dibek Kahvesi",
     "Menengiç",
-    "Matcha",
+    "Matcha"
 ];
 
+/* Günün Kahvesi */
+
+let rastgeleSayi =
+Math.floor(Math.random() * kahveler.length);
+
+document.getElementById("gununKahvesi").innerHTML =
+kahveler[rastgeleSayi];
+
+
+/* Arama Sistemi */
 
 let aramaKutusu =
 document.getElementById("aramaKutusu");
@@ -560,16 +588,20 @@ aramaKutusu.addEventListener("keyup", function(){
 
     sonucAlani.innerHTML = "";
 
+    if(aranacakKelime === ""){
+        return;
+    }
+
     kahveler.forEach(function(kahve){
 
-        if(
-            kahve.toLowerCase()
-            .includes(aranacakKelime)
-        ){
+        if(kahve.toLowerCase().includes(aranacakKelime)){
 
             sonucAlani.innerHTML +=
-            "<p>" + kahve + "</p>";
-
+            `
+            <div class="arama-item">
+                ☕ ${kahve}
+            </div>
+            `;
         }
 
     });
@@ -577,24 +609,5 @@ aramaKutusu.addEventListener("keyup", function(){
 });
 
 </script>
-</body>
-</html>
-<!--```
 
-# Sana önemli notlar ☕
-
-* `id` isimlerini profesyonel hale getirdim.
-* Aynı `id` kullanım hatalarını düzelttim.
-* Kod bloklarını kategorilere ayırdım.
-* Okunabilirliği ciddi şekilde artırdım.
-* İleride JavaScript eklemen için uygun hale getirdim.
-* Görsel olarak daha profesyonel bir yapı oluştu.
-
-Bir sonraki aşamada buna:
-
-* JavaScript ile canlı sonuç gösterme
-* Kahve önerme sistemi
-* Kullanıcı seçimine göre dinamik içerik
-
-çok rahat eklenebilir.
 -->
