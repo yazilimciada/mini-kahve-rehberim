@@ -572,34 +572,44 @@ button:hover{
             box-shadow: 0 0 8px rgba(111, 78, 55, 0.3);
         }
 
-       /* Küçültülmüş ve Sağ Alta Sabitlenmiş Yukarı Çık Butonu */
+    /* Küçültülmüş ve Sağ Alta Sabitlenmiş Yukarı Çık Butonu */
 #scrollTopBtn {
-    display: none; /* İlk başta gizli */
+    display: none; /* İlk başta gizli olacak (JavaScript bunu açacak) */
     position: fixed; /* Ekranın neresine gidersen git, o orada kalsın */
-    bottom: 20px; /* Alttan boşluk (biraz daha yaklaştırdım) */
-    right: 20px; /* Sağdan boşluk (biraz daha yaklaştırdım) */
+    bottom: 20px; /* Alttan boşluk */
+    right: 20px; /* Sağdan boşluk */
     z-index: 1000; /* Her şeyin üstünde görünsün */
-    font-size: 16px; /* Ok işaretinin boyutu (küçültüldü) */
+    font-size: 16px; /* Ok işaretinin boyutu */
     border: none;
     outline: none;
     background-color: #6f4e37; /* Kahve tonu */
     color: white;
     cursor: pointer;
-    width: 40px; /* Butonun genişliği (sabitledim ve küçülttüm) */
-    height: 40px; /* Butonun yüksekliği (sabitledim ve küçülttüm) */
+    width: 45px; /* Buton genişliği */
+    height: 45px; /* Buton yüksekliği */
     border-radius: 50%; /* Tam yuvarlak olması için */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Biraz daha belirgin gölge */
-    transition: all 0.3s ease; /* Hover efekti için yumuşak geçiş */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Belirgin gölge */
+    transition: all 0.3s ease; /* Yumuşak geçiş */
     
-    /* İçindeki oku tam ortalamak için Flexbox */
-    display: flex;
+    /* İçindeki oku tam ortalamak için Flexbox (Burayı JS tetiklenince çalışacak şekilde ayarladık) */
     justify-content: center;
     align-items: center;
 }
 
 #scrollTopBtn:hover {
     background-color: #553c2a; /* Hover olunca koyulaşsın */
-    transform: scale(1.1); /* Hafifçe büyüsün (görsel geri bildirim) */
+    transform: scale(1.1); /* Hafifçe büyüsün */
+}
+
+/* MOBİL UYUM (Responsive) AYARI */
+@media screen and (max-width: 600px) {
+    #scrollTopBtn {
+        bottom: 15px; /* Mobilde parmak yetişsin diye biraz daha optimize ettik */
+        right: 15px;
+        width: 40px;  /* Mobilde ekranı kaplamasın diye hafif küçülttük */
+        height: 40px;
+    }
+
 }
 /* --- Yeni Eklenen Arama ve Seçim Alanı Düzenlemeleri --- */
 
