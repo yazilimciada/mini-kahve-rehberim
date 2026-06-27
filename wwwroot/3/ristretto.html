@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristretto</title>
+
+    <link rel="icon" href="indir (1).jfif" type="image/jfif">
+
+    <style>
+
+        /* ========================= */
+        /* GENEL SAYFA */
+        /* ========================= */
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#e1cbf8;
+            margin:0;
+            padding:30px;
+            color:#3d3152;
+            line-height:1.8;
+        }
+
+        /* ========================= */
+        /* ANA KAPSAYICI */
+        /* ========================= */
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+        }
+
+        /* ========================= */
+        /* BAŞLIK KUTUSU */
+        /* ========================= */
+
+        .baslik{
+            background-color:#5c3b74;
+            padding:15px;
+            border-radius:12px;
+            margin-top:25px;
+            margin-bottom:20px;
+            box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* ========================= */
+        /* BAŞLIK YAZISI */
+        /* ========================= */
+
+        .yazi{
+            color:white;
+            text-align:center;
+            margin:0;
+            transition:0.3s;
+        }
+
+        .yazi:hover{
+            color:#ead8ff;
+            letter-spacing:1px;
+        }
+
+        /* ========================= */
+        /* RESİMLER */
+        /* ========================= */
+
+        .resim{
+            text-align:center;
+            margin:25px 0;
+        }
+
+        .resim img{
+            width:320px;
+            max-width:100%;
+            border:5px groove #9d7bb5;
+            padding:6px;
+            border-radius:12px;
+            background-color:white;
+            transition:0.3s;
+        }
+
+        .resim img:hover{
+            transform:scale(1.03);
+        }
+
+        /* ========================= */
+        /* PARAGRAF */
+        /* ========================= */
+
+        p{
+            background-color:#f7f2fc;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:1px 1px 5px rgba(0,0,0,0.08);
+            margin-bottom:15px;
+        }
+
+        /* ========================= */
+        /* LİSTELER */
+        /* ========================= */
+
+        ol{
+            background-color:#f7f2fc;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:1px 1px 5px rgba(0,0,0,0.08);
+        }
+
+        li{
+            margin-bottom:15px;
+        }
+
+        /* ========================= */
+        /* ALT BAŞLIK */
+        /* ========================= */
+
+        .alt-baslik{
+            color:#5c3b74;
+            margin-top:30px;
+            margin-bottom:15px;
+            font-size:22px;
+        }
+
+        /* ========================= */
+        /* BİLGİ KUTUSU */
+        /* ========================= */
+
+        .bilgi{
+            background-color:#e9d8f7;
+            border-left:6px solid #5c3b74;
+            padding:18px;
+            border-radius:10px;
+            margin-top:25px;
+            font-style:italic;
+        }
+
+        /* ========================= */
+        /* RESPONSIVE */
+        /* ========================= */
+
+        @media(max-width:768px){
+
+            body{
+                padding:15px;
+            }
+
+            .resim img{
+                width:100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ANA BAŞLIK -->
+
+        <div class="baslik">
+            <h1 class="yazi">
+                ☕ Ristretto Yapım Rehberi
+            </h1>
+        </div>
+
+        <!-- ANA RESİM -->
+
+        <div class="resim">
+            <img src="ristretto.jpg" alt="Ristretto">
+        </div>
+
+        <!-- HAKKINDA -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                📖 Ristretto Hakkında Bilgiler
+            </h2>
+        </div>
+
+        <p>
+            Ristretto, espressonun daha az suyla
+            ve daha kısa sürede hazırlanan,
+            çok daha yoğun bir versiyonudur.
+        </p>
+
+        <p>
+            İtalyancada “kısıtlı” anlamına gelir.
+            Aynı kahve miktarı kullanılır ancak
+            su miktarı azaltılır.
+        </p>
+
+        <p>
+            Genellikle 15-20 ml olarak servis edilir
+            ve espressoya göre daha tatlı,
+            daha yoğun ve daha gövdeli bir tada sahiptir.
+        </p>
+
+        <p>
+            Demleme süresi kısa olduğu için
+            acı tatlar ortaya çıkmadan işlem biter.
+            Bu yüzden ristretto,
+            espressoya göre daha aromatik hissedilir.
+        </p>
+
+        <!-- TEMEL ÖZELLİKLER -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                🌟 Temel Özellikleri
+            </h2>
+        </div>
+
+        <ol>
+
+            <li>
+                Espressoya göre daha kısa sürede demlenir.
+            </li>
+
+            <li>
+                Daha yoğun ve gövdeli bir kahvedir.
+            </li>
+
+            <li>
+                Daha az acı,
+                daha tatlı aromalara sahiptir.
+            </li>
+
+            <li>
+                Kafein oranı espressoya göre biraz daha düşüktür.
+            </li>
+
+        </ol>
+
+        <!-- EVDE YAPIM -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                🏠 Evde Kolay Ristretto Yapımı
+            </h2>
+        </div>
+
+        <!-- MALZEMELER -->
+
+        <h3 class="alt-baslik">
+            🛠️ Gerekli Malzemeler
+        </h3>
+
+        <ol>
+
+            <li>Moka Pot</li>
+
+            <div class="resim">
+                <img src="moka_pot.jpg" alt="Moka Pot">
+            </div>
+
+            <li>İnce öğütülmüş kahve</li>
+
+            <li>Sıcak su</li>
+
+            <li>
+                Soğuk su dolu kap veya ıslak havlu
+            </li>
+
+        </ol>
+
+        <!-- HAZIRLANIŞ -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                📋 Adım Adım Hazırlanışı
+            </h2>
+        </div>
+
+        <ol>
+
+            <li>
+                Moka potun alt haznesine
+                normalden daha az sıcak su koyun.
+            </li>
+
+            <li>
+                Kahve sepetini ağzına kadar doldurun
+                ancak bastırmayın.
+            </li>
+
+            <li>
+                Moka potu kısık ateşe koyun
+                ve akışı izleyin.
+            </li>
+
+            <li>
+                Kahvenin rengi açılmaya başladığı anda
+                moka potu ocaktan alın.
+            </li>
+
+            <li>
+                Demlemeyi durdurmak için
+                moka potun alt kısmını soğuk suya tutun.
+            </li>
+
+        </ol>
+
+        <!-- EK BİLGİ -->
+
+        <div class="bilgi">
+
+            ☕ Küçük Bilgi:
+            Ristretto, yoğun aroması nedeniyle
+            kahve tutkunlarının en sevdiği
+            espresso türlerinden biridir.
+
+        </div>
+
+    </div>
+
+</body>
+</html>

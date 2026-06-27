@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Dünyam</title>
+
+    <link rel="stylesheet" href="deneme.css">
+    <link rel="icon" href="indir (1).jfif" type="image/jfif">
+</head>
+
+<body>
+    <!-- BAŞLIK -->
+    <h2>Mini Kahve Rehberim</h2>
+
+    <!-- MENÜ -->
+    <header>
+        <nav>
+            <a href="index.html">Anasayfa</a>
+            <a href="kahve_cesitleri.html">Kahve Çeşitleri</a>
+            <a href="yapım_rehberi.html">Yapım Rehberi</a>
+            <a href="hakkımızda.html">Hakkımızda</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+
+    <!-- LOGO -->
+    <div class="icons">
+
+        <img src="indir.png"
+             alt="Kahve İkonu"
+             class="icon"
+             title="Mini Dünyam İkonu">
+
+        <span>Mini Dünyam</span>
+
+    </div>
+ <!--İntro (gif)-->
+    <div class="intro">
+        <img src="intro.gif" alt="Kahve İntro">
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Kahve Dünyasına Hoş Geldiniz ☕</h1>
+
+            <p>
+                En sevilen kahve çeşitlerini keşfedin,
+                yapım rehberlerini öğrenin ve
+                kendi kahve deneyiminizi oluşturun.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- KAHVE KARTLARI -->
+    <section class="coffee-section">
+
+        <h2 class="section-title">
+            Popüler Kahve Çeşitleri
+        </h2>
+
+        <div class="menu">
+
+            <!-- TÜRK KAHVESİ -->
+            <div class="coffee">
+
+                <img src="türk_kahvesi1.jpg"
+                     alt="Türk Kahvesi"
+                     class="coffee-image">
+
+                <h3>Türk Kahvesi</h3>
+
+                <p>
+                    Geleneksel, yoğun aromalı ve köpüklü kahve deneyimi.
+                </p>
+
+            </div>
+
+            <!-- ESPRESSO -->
+            <div class="coffee">
+
+                <img src="espresso1.jpg"
+                     alt="Espresso"
+                     class="coffee-image">
+
+                <h3>Espresso</h3>
+
+                <p>
+                    Sert, yoğun ve güçlü aromasıyla klasik İtalyan kahvesi.
+                </p>
+
+            </div>
+
+            <!-- LATTE -->
+            <div class="coffee">
+
+                <img src="latte1.jpg"
+                     alt="Latte"
+                     class="coffee-image">
+
+                <h3>Latte</h3>
+
+                <p>
+                    Sütlü, yumuşak içimli ve kremamsı kahve çeşidi.
+                </p>
+
+            </div>
+
+            <!-- CAPPUCCINO -->
+            <div class="coffee">
+
+                <img src="cappuccino1.jpg"
+                     alt="Cappuccino"
+                     class="coffee-image">
+
+                <h3>Cappuccino</h3>
+
+                <p>
+                    Köpüklü sütüyle dengeli ve aromatik kahve keyfi.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   <!-- GÜNÜN KAHVESİ -->
+
+<section class="gunun-kahvesi">
+
+    <h2>☕ Günün Kahvesi</h2>
+
+    <p>
+        Bugünün önerisi:
+        <strong id="gununKahvesi"></strong>
+    </p>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- SOL -->
+            <div class="footer-box">
+
+                <h3>Mini Dünyam</h3>
+
+                <p>
+                    Kahve severler için hazırlanmış
+                    mini kahve rehberi.
+                </p>
+
+            </div>
+
+            <!-- ORTA -->
+            <div class="footer-box">
+
+                <h3>Bağlantılar</h3>
+
+                <a href="hakkımızda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+                <a href="kahve_cesitleri.html">Kahve Çeşitleri</a>
+                <a href="yapım_rehberi.html">Yapım Rehberi</a>
+
+            </div>
+
+            <!-- SAĞ -->
+            <div class="footer-box">
+
+                <h3>İletişim</h3>
+
+                <p>
+                    <a href="tel:05349335845">0-534-933-58-45</a>
+                </p>
+                <p>
+                    <a href="mailto:adagoncu931@gmail.com">📧 adagoncu931@gmail.com</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ALT -->
+        <div class="footer-bottom">
+
+            © 2026 Mini Dünyam | Tüm Hakları Saklıdır
+
+        </div>
+
+    </footer>
+
+    <script>
+
+let kahveler = [
+    "Espresso",
+    "Americano",
+    "Latte",
+    "Cappuccino",
+    "Mocha",
+    "Macchiato",
+    "Flat White",
+    "Türk Kahvesi",
+    "Caffè Mocha",
+    "Ristretto",
+    "Lungo",
+    "Long Black",
+    "Cortado",
+    "Cold Brew",
+    "Japanese Cold Brew",
+    "Iced Americano",
+    "Iced Latte",
+    "V60 (Pour Over)",
+    "Chemex",
+    "French Press",
+    "Aeropress",
+    "Moka Pot",
+    "Syphon",
+    "Drip Coffee",
+    "Iced Mocha",
+    "Frappé",
+    "Cold Drip",
+    "Nitro Cold Brew",
+    "Espresso Tonic",
+    "Mazagran",
+    "Yemen Mocha",
+    "Vietnamese Coffee",
+    "Cuban Coffee (Cafecito)",
+    "Café au Lait",
+    "Café con Leche",
+    "Buna (Etiyopya)",
+    "Vanilla Latte",
+    "Caramel Latte",
+    "Caramel Macchiato",
+    "Yulaf sütlü latte",
+    "Lotus latte",
+    "Iced salted caramel latte",
+    "Sütlü Filtre",
+    "Dibek Kahvesi",
+    "Menengiç",
+    "Matcha",
+];
+
+let rastgeleSayi =
+Math.floor(Math.random() * kahveler.length);
+
+document.getElementById("gununKahvesi").innerHTML =
+kahveler[rastgeleSayi];
+
+</script>
+
+</body>
+</html>

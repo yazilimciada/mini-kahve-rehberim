@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macchiato</title>
+
+    <link rel="icon" href="indir (1).jfif" type="image/jfif">
+
+    <style>
+
+        /* ========================= */
+        /* GENEL SAYFA */
+        /* ========================= */
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#e1cbf8;
+            margin:0;
+            padding:30px;
+            color:#4b3f52;
+            line-height:1.8;
+        }
+
+        /* ========================= */
+        /* ANA KUTU */
+        /* ========================= */
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+        }
+
+        /* ========================= */
+        /* BAŞLIK ALANI */
+        /* ========================= */
+
+        .baslik{
+            background-color:#665252;
+            padding:15px;
+            border-radius:12px;
+            margin-top:25px;
+            margin-bottom:20px;
+            box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .yazi{
+            color:#d9c8f0;
+            text-align:center;
+            margin:0;
+            transition:0.3s;
+        }
+
+        .yazi:hover{
+            color:#ffffff;
+            letter-spacing:1px;
+        }
+
+        /* ========================= */
+        /* RESİMLER */
+        /* ========================= */
+
+        .resim{
+            text-align:center;
+            margin:25px 0;
+        }
+
+        .resim img{
+            width:320px;
+            max-width:100%;
+            border:5px groove #9a95d6;
+            padding:6px;
+            border-radius:12px;
+            background-color:white;
+            transition:0.3s;
+        }
+
+        .resim img:hover{
+            transform:scale(1.03);
+        }
+
+        /* ========================= */
+        /* PARAGRAF */
+        /* ========================= */
+
+        p{
+            background-color:#f5effc;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:1px 1px 5px rgba(0,0,0,0.08);
+            margin-bottom:15px;
+        }
+
+        /* ========================= */
+        /* LİSTELER */
+        /* ========================= */
+
+        ol{
+            background-color:#f5effc;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:1px 1px 5px rgba(0,0,0,0.08);
+        }
+
+        li{
+            margin-bottom:15px;
+        }
+
+        /* ========================= */
+        /* ALT BAŞLIK */
+        /* ========================= */
+
+        .alt-baslik{
+            color:#665252;
+            margin-top:30px;
+            margin-bottom:15px;
+            font-size:22px;
+        }
+
+        /* ========================= */
+        /* RESPONSIVE */
+        /* ========================= */
+
+        @media(max-width:768px){
+
+            body{
+                padding:15px;
+            }
+
+            .resim img{
+                width:100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ANA BAŞLIK -->
+
+        <div class="baslik">
+            <h1 class="yazi">
+                ☕ Macchiato Yapım Rehberi
+            </h1>
+        </div>
+
+        <!-- ANA RESİM -->
+
+        <div class="resim">
+            <img src="macchiato.jpg" alt="Macchiato">
+        </div>
+
+        <!-- HAKKINDA -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                📖 Macchiato Hakkında Bilgiler
+            </h2>
+        </div>
+
+        <p>
+            Macchiato (Espresso Macchiato), espresso shot’ının üzerine
+            çok az miktarda süt köpüğü eklenerek hazırlanan yoğun bir kahvedir.
+        </p>
+
+        <p>
+            İtalyancada "lekeli" anlamına gelir.
+            Yani espressoyu süt köpüğüyle hafifçe lekelemek demektir.
+        </p>
+
+        <p>
+            Dışarıda satılan büyük ve karamelli içecekler genellikle
+            Latte Macchiato’dur. Klasik Macchiato ise daha sert,
+            yoğun ve kahve odaklıdır.
+        </p>
+
+        <!-- TEMEL BİLGİLER -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                🌟 Temel Özellikleri
+            </h2>
+        </div>
+
+        <ol>
+
+            <li>
+                1 shot espresso (30 ml) ve üzerine
+                sadece az miktarda süt köpüğü eklenir.
+            </li>
+
+            <li>
+                Sert ve yoğun kahve tadını korurken,
+                süt köpüğü sayesinde hafif kremsi bir his verir.
+            </li>
+
+            <li>
+                Görünüm olarak koyu espresso kremasının
+                ortasında beyaz köpük bulunur.
+            </li>
+
+        </ol>
+
+        <!-- EVDE YAPIM -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                🏠 Evde Kolay Macchiato Yapımı
+            </h2>
+        </div>
+
+        <p>
+            Evde Macchiato yaparken en önemli nokta,
+            sütü sıvı halde değil yoğun köpük şeklinde kullanmaktır.
+        </p>
+
+        <!-- MALZEMELER -->
+
+        <h3 class="alt-baslik">
+            🛠️ Gerekli Malzemeler
+        </h3>
+
+        <ol>
+
+            <li>
+                Moka pot veya French press
+            </li>
+
+            <div class="resim">
+                <img src="moka_pot.jpg" alt="Moka Pot">
+            </div>
+
+            <li>
+                French press veya kavanoz
+            </li>
+
+            <div class="resim">
+                <img src="french_press.jpg" alt="French Press">
+            </div>
+
+            <li>
+                50 ml sıcak süt
+            </li>
+
+        </ol>
+
+        <!-- HAZIRLANIŞ -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                📋 Adım Adım Hazırlanışı
+            </h2>
+        </div>
+
+        <ol>
+
+            <li>
+                Moka pot ile yaklaşık 30-40 ml yoğun kahve hazırlayın.
+            </li>
+
+            <li>
+                Sıcak sütü French press içine koyup
+                15-20 kez yukarı aşağı hareket ettirerek köpürtün.
+            </li>
+
+            <li>
+                Oluşan yoğun süt köpüğünü kahvenin ortasına
+                1-2 kaşık ekleyin.
+            </li>
+
+        </ol>
+
+    </div>
+
+</body>
+</html>
