@@ -658,3 +658,44 @@ button:hover{
     from { opacity: 0; transform: translateY(-5px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* Mobil Ekranlar İçin (768px ve altı) */
+@media (max-width: 768px) {
+  
+  /* 1. Menü ve Header Düzenlemesi */
+  header, nav {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 10px !important;
+  }
+
+  nav a, nav button {
+    display: block;
+    width: 100%;
+    margin: 5px 0 !important;
+  }
+
+  /* 2. Kahve Kartlarının Grid Yapısı (Mobilde 1 veya 2 Sütun) */
+  .container, .kahve-grid, main { 
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 15px !important;
+    padding: 10px !important;
+  }
+
+  /* 3. Kart İçi Resim ve Yazı Boyutları */
+  .card, .kahve-kart {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .card img, .kahve-kart img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 4. Arama Çubuğu Mobilde Tam Genişlik Olsun */
+  input[type="text"], .search-bar {
+    width: 90% !important;
+    margin: 10px auto !important;
+  }
+}
