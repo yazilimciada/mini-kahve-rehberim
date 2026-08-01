@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Americano</title>
+
+    <link rel="icon" href="indir (1).jfif" type="image/jfif">
+
+    <style>
+
+        /* ========================= */
+        /* GENEL SAYFA */
+        /* ========================= */
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#e1cbf8;
+            margin:0;
+            padding:30px;
+            color:#3f3f52;
+            line-height:1.8;
+        }
+
+        /* ========================= */
+        /* ANA KAPSAYICI */
+        /* ========================= */
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+        }
+
+        /* ========================= */
+        /* BAŞLIK KUTUSU */
+        /* ========================= */
+
+        .baslik{
+            background-color:#4c5f75;
+            padding:15px;
+            border-radius:12px;
+            margin-top:25px;
+            margin-bottom:20px;
+            box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* ========================= */
+        /* BAŞLIK YAZISI */
+        /* ========================= */
+
+        .yazi{
+            color:#ffffff;
+            text-align:center;
+            margin:0;
+            transition:0.3s;
+        }
+
+        .yazi:hover{
+            letter-spacing:1px;
+            color:#dbe9ff;
+        }
+
+        /* ========================= */
+        /* RESİMLER */
+        /* ========================= */
+
+        .resim{
+            text-align:center;
+            margin:25px 0;
+        }
+
+        .resim img{
+            width:320px;
+            max-width:100%;
+            border:5px groove #8ca6c0;
+            padding:6px;
+            border-radius:12px;
+            background-color:white;
+            transition:0.3s;
+        }
+
+        .resim img:hover{
+            transform:scale(1.03);
+        }
+
+        /* ========================= */
+        /* PARAGRAF */
+        /* ========================= */
+
+        p{
+            background-color:#f5f7fc;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:1px 1px 5px rgba(0,0,0,0.08);
+            margin-bottom:15px;
+        }
+
+        /* ========================= */
+        /* LİSTELER */
+        /* ========================= */
+
+        ol,
+        ul{
+            background-color:#f5f7fc;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:1px 1px 5px rgba(0,0,0,0.08);
+        }
+
+        li{
+            margin-bottom:15px;
+        }
+
+        /* ========================= */
+        /* ALT BAŞLIK */
+        /* ========================= */
+
+        .alt-baslik{
+            color:#4c5f75;
+            margin-top:30px;
+            margin-bottom:15px;
+            font-size:22px;
+        }
+
+        /* ========================= */
+        /* TÜYO KUTUSU */
+        /* ========================= */
+
+        .tuyo{
+            background-color:#dce9f7;
+            border-left:6px solid #4c5f75;
+            padding:18px;
+            border-radius:10px;
+            margin-top:20px;
+            font-style:italic;
+        }
+
+        /* ========================= */
+        /* RESPONSIVE */
+        /* ========================= */
+
+        @media(max-width:768px){
+
+            body{
+                padding:15px;
+            }
+
+            .resim img{
+                width:100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ANA BAŞLIK -->
+
+        <div class="baslik">
+            <h1 class="yazi">
+                ☕ Americano Yapım Rehberi
+            </h1>
+        </div>
+
+        <!-- ANA RESİM -->
+
+        <div class="resim">
+            <img src="americano.jpg" alt="Americano">
+        </div>
+
+        <!-- HAKKINDA -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                📖 Americano Hakkında Bilgiler
+            </h2>
+        </div>
+
+        <p>
+            Americano, espresso özünün sıcak su ile seyreltilmesiyle
+            elde edilen klasik bir kahve türüdür.
+        </p>
+
+        <p>
+            Filtre kahveye benzer bir yumuşaklığa sahip olsa da,
+            espresso yöntemiyle hazırlandığı için daha yoğun aromalıdır.
+        </p>
+
+        <p>
+            İkinci Dünya Savaşı sırasında İtalya’daki Amerikan askerlerinin
+            espressoyu sert bulup sıcak su eklemesiyle ortaya çıktığı söylenir.
+        </p>
+
+        <!-- TEMEL BİLGİLER -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                🌟 Temel Özellikleri
+            </h2>
+        </div>
+
+        <ol>
+
+            <li>
+                Genellikle 1 shot espressoya
+                2 ölçek sıcak su eklenerek hazırlanır.
+            </li>
+
+            <li>
+                Filtre kahveye göre daha gövdeli,
+                daha yoğun aromalıdır.
+            </li>
+
+            <li>
+                Espresso suyun üzerine dökülürse
+                kahvenin krema tabakası korunur.
+            </li>
+
+        </ol>
+
+        <!-- EVDE YAPIM -->
+
+        <div class="baslik">
+            <h2 class="yazi">
+                🏠 Evde Kolay Americano Yapımı
+            </h2>
+        </div>
+
+        <p>
+            Evde espresso makineniz yoksa,
+            moka pot veya French press ile hazırlanan yoğun kahve özüyle
+            oldukça başarılı bir Americano yapabilirsiniz.
+        </p>
+
+        <!-- HAZIRLANIŞ -->
+
+        <h3 class="alt-baslik">
+            📋 Adım Adım Hazırlanışı
+        </h3>
+
+        <ol>
+
+            <li>
+                Fincanınıza yaklaşık 90-120 ml sıcak su doldurun.
+            </li>
+
+            <li>
+
+                Kahve özünü hazırlayın:
+
+                <ul>
+
+                    <li>
+                        Moka Pot ile yaklaşık 40-50 ml yoğun kahve hazırlayın.
+                    </li>
+
+                    <div class="resim">
+                        <img src="moka_pot.jpg" alt="Moka Pot">
+                    </div>
+
+                    <li>
+                        French Press ile yoğun kahve demleyebilirsiniz.
+                    </li>
+
+                    <div class="resim">
+                        <img src="french_press.jpg" alt="French Press">
+                    </div>
+
+                </ul>
+
+            </li>
+
+            <li>
+                Hazırladığınız yoğun kahveyi
+                sıcak suyun üzerine yavaşça dökün.
+            </li>
+
+        </ol>
+
+        <!-- TÜYO -->
+
+        <div class="tuyo">
+
+            ☕ Küçük Tüyo:
+            Kahveyi suyun üzerine dökmek,
+            kahvenin üzerindeki krema tabakasını koruyarak
+            daha yumuşak bir içim sağlar.
+
+        </div>
+
+    </div>
+
+</body>
+</html>

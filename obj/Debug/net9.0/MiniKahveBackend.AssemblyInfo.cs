@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniKahveBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e99b8381213c722da23c941bc5b9d95bcb1373b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0664e439802c2f5928df042d05ba13cb4daee3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniKahveBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniKahveBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
